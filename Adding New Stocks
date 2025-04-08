@@ -1,0 +1,7 @@
+def add_stock(inventory, product_id, product_details, size):
+    index = product_id % size
+    if inventory[index] is not None:
+        print("Stock already exists. Update instead.")
+    else:
+        inventory[index] = product_details
+        print("Stock added successfully.")
