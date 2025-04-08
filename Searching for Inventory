@@ -1,0 +1,3 @@
+def search_stock(inventory, product_id, size):
+    index = product_id % size
+    return inventory[index] if inventory[index] is not None else "Stock not found"
