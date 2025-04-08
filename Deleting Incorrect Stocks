@@ -1,0 +1,7 @@
+def delete_stock(inventory, product_id, size):
+    index = product_id % size
+    if inventory[index] is not None:
+        inventory[index] = None
+        print("Stock deleted successfully.")
+    else:
+        print("Stock not found.")
